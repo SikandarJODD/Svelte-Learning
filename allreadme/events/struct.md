@@ -1,4 +1,4 @@
-# Events
+# Events and Events Passing ( Component Directives)
 
 Use the <code>on:</code> directive to listen to DOM events.
 
@@ -21,7 +21,7 @@ Use the <code>on:</code> directive to listen to DOM events.
     </button>
 ```
 
-#### Inline events
+### Inline events
 
 ```bash
     <button on:click={() => (count += 1)}>
@@ -71,8 +71,64 @@ It's possible to have multiple event listeners for the same event:
     </button>
 ```
 
+# Component Directives
+we can forward our own events, functions using <code>createEventDispatcher</code>
+
+```
+    <!-- Button.svelte : passing on:click event to parent component  -->
+    <button on:click>
+        two
+    </button>
+```
+Example : 
+```
+   <script>
+        import Button from '$lib/Button.svelte';
+        let printConsole=()=>{
+            console.log("Hello this function is passed from Child Component");
+        }
+   </script>
+
+   <Button on:click={printConsole} > 
+
+```
+
+Passing Your own Function 
+```
+    <!-- BoxComponent.svelte -->
+    <script>
+        import { createEventDispatcher } from "svelte";
+
+        const dispatch = createEventDispatcher();
+        function sayHello() {
+            dispatch("message", {
+            text: "Bhide",
+            });
+        }
+    </script>
+
+    <button on:click={sayHello}> Click to say hello </button>
+
+```
+Example 
+```
+<!-- +page.svelte -->
+    <script>
+        import BoxComponent from "$lib/BoxComponent.svelte";
+
+        let mint = (e) => {
+            console.log("This will print Bhide in Console: ",e.detail.text);
+        };
+    </script>
+
+    <BoxComponent on:message={mint} />
+
+```
+
+
+
 For detail infomation visit [svelte.dev](https://svelte.dev/docs/element-directives#on-eventname)
 
-[Home](../README.md)
+[Home](../../README.md)
 
-[Inputs and Bindings](/Inputs/struct.md)
+[Inputs and Bindings](../Inputs/struct.md)

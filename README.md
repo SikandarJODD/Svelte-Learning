@@ -23,11 +23,10 @@ The Three main features are:
 
 ### Topics
 
-- [Format](format/struct.md)
-- [Logical Blocks](/conditional_rendering/struct.md)
-- [Events & Modifiers](/events/struct.md)
-- [Inputs](/Inputs/struct.md)
-- [Forms](/forms/struct.md)
-- [Data Passing](/Data_Pass/struct.md)
-
-- [Examples](/examples/struct.md)
+- [Format](/allreadme/format/struct.md)
+- [Logical Blocks](/allreadme/conditional_rendering/struct.md)
+- [Events & Modifiers](/allreadme/events/struct.md)
+- [Inputs](/allreadme/Inputs/struct.md)
+- [Forms](/allreadme/forms/struct.md)
+- [Data Passing](/allreadme/Data_Pass/struct.md)
+- [Examples](/allreadme/examples/struct.md)

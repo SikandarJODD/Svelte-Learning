@@ -5,7 +5,7 @@
 - {#if expression}...{:else }...{/if}
 - {#each}....{/each} - for Loop
 
-#### {#if expression}
+### {#if expression}
 
 ```
     <script>
@@ -19,7 +19,7 @@
     </div>
 ```
 
-#### {#if expression}....{:else if expression}...{if}
+### {#if expression}....{:else if expression}...{if}
 
 ```
     <script>
@@ -34,7 +34,7 @@
     </div>
 ```
 
-#### {#if expression}....{:else}...{if}
+### {#if expression}....{:else}...{if}
 
 ```
     <script>
@@ -49,7 +49,7 @@
     </div>
 ```
 
-#### Fop Loop : {#each}
+### Fop Loop : {#each}
 
 iterating over list of values can be done with each block
 
@@ -64,7 +64,7 @@ iterating over list of values can be done with each block
     </ul>
 ```
 
-#### Fop Loop : array of Objects
+### Fop Loop : array of Objects
 
 iterating over list of values can be done with each block
 
@@ -98,7 +98,7 @@ iterating over list of values can be done with each block
 
 ```
 
-#### Fop Loop : Each with Else
+### Fop Loop : Each with Else
 An each block can also have an <code>{:else}</code> clause, which is rendered if the list is empty.
 
 iterating over list of values can be done with each block
@@ -122,5 +122,5 @@ iterating over list of values can be done with each block
 ```
 For detailed Information visit [svelte.dev](https://svelte.dev/docs/logic-blocks) 
 
-[Home](../README.md)
-[Inputs](/Inputs/struct.md)
+[Home](../../README.md)
+[Inputs](../Inputs/struct.md)

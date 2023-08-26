@@ -2,7 +2,7 @@
 
 Components are the building blocks of Svelte applications. They are written into <code>.svelte</code> files.
 
-#### Basic Setup of .svelte file
+### Basic Setup of .svelte file
 
 ```bash
     <script>
@@ -21,7 +21,7 @@ Components are the building blocks of Svelte applications. They are written into
 
 \*all three sections - script,styles,markup are optional
 
-#### Creating Props
+### Creating Props
 
 <code>export</code> is used to send props
 
@@ -43,7 +43,7 @@ Components are the building blocks of Svelte applications. They are written into
 
 ```
 
-#### Assignments are 'reactive'
+### Assignments are 'reactive'
 
 To change the component state and trigger a <i>re-render</i>, just assign to a locally declared variable
 
@@ -79,5 +79,5 @@ as svelte reactivity is based on assignments, using array method like <code>.pus
 for more detailed view visit [svelte.dev](https://svelte.dev/docs/svelte-components)
 
 
-[Home](../README.md)
-[Logical Blocks](/conditional_rendering/struct.md)
+[Home](../../README.md)
+[Logical Blocks](../conditional_rendering/struct.md)
